@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="170dp"
+    android:viewportWidth="360"
+    android:viewportHeight="170">
+
+    <!-- White area below the smile curve -->
+    <path
+        android:fillColor="#F4F7F5"
+        android:pathData="M0,42
+                          C60,18 110,132 180,132
+                          C250,132 300,18 360,42
+                          L360,170
+                          L0,170
+                          Z" />
+
+    <!-- White smile border -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M0,42
+                          C60,18 110,132 180,132
+                          C250,132 300,18 360,42"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+</vector>

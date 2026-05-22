@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F5"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingStart="18dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="18dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/cardMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_main_dark_card"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="108dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/txtMiniTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_mini"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/titleGreenhouseRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtGreenhouseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_greenhouse"
+                android:textColor="#A7E76F"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlcTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_plc"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/main_subtitle"
+            android:textColor="#9CE27C"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/decorLine"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="52dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#336EE68B" />
+
+            <ImageView
+                android:id="@+id/icDecorLeaf"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/cd_leaf"
+                android:src="@drawable/ic_leaf"
+                android:tint="#73DC85" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#336EE68B" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panelFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_green_glass_panel"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icTempFeature"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:contentDescription="@string/cd_temperature"
+                    android:src="@drawable/ic_temperature"
+                    android:tint="#73DC85" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/feature_monitor"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-1dp"
+                    android:text="@string/feature_monitor_desc"
+                    android:textColor="#CFECDD"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="58dp"
+                android:background="#225EDB8B" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icWaterFeature"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:contentDescription="@string/cd_water_drop"
+                    android:src="@drawable/ic_water_drop"
+                    android:tint="#73DC85" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/feature_track"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-1dp"
+                    android:text="@string/feature_track_desc"
+                    android:textColor="#CFECDD"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="58dp"
+                android:background="#225EDB8B" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icLightFeature"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:contentDescription="@string/cd_light"
+                    android:src="@drawable/ic_light"
+                    android:tint="#73DC85" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/feature_control"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-1dp"
+                    android:text="@string/feature_control_desc"
+                    android:textColor="#CFECDD"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/connectHintRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icSignalSmall"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:contentDescription="@string/cd_signal"
+                android:src="@drawable/ic_signal"
+                android:tint="#86EFAC" />
+
+            <TextView
+                android:id="@+id/txtConnectHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="monospace"
+                android:text="@string/connect_hint"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+            android:text="@string/target_wifi"
+            android:textColor="#A7F3D0"
+            android:textSize="9sp" />
+
+        <ProgressBar
+            android:id="@+id/progressConnect"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginTop="2dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp">
+
+            <View
+                android:id="@+id/btnGlow"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/bg_connect_button_glow" />
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_connect_button"
+                android:elevation="10dp"
+                android:paddingStart="34dp"
+                android:paddingEnd="34dp"
+                android:text="@string/connect"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/icWifiButton"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="58dp"
+                android:contentDescription="@string/cd_wifi"
+                android:src="@drawable/ic_wifi" />
+
+            <ImageView
+                android:id="@+id/icArrowButton"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="32dp"
+                android:contentDescription="@string/cd_arrow"
+                android:src="@drawable/ic_arrow_right" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtPoweredBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/powered_by"
+            android:textColor="#CFECDD"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <com.xzynetic.greenhouseplc.SmileHeaderImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="305dp"
+        android:contentDescription="@string/cd_greenhouse_header"
+        android:elevation="18dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/green_house_plc_bg_mainact" />
+
+    <FrameLayout
+        android:id="@+id/leafBadge"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="253dp"
+        android:background="@drawable/bg_leaf_badge"
+        android:elevation="25dp">
+
+        <ImageView
+            android:id="@+id/icLeafBadgeImage"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/cd_leaf_badge"
+            android:src="@drawable/ic_leaf_outline"
+            android:tint="#064E3B" />
+    </FrameLayout>
+
+    <com.xzynetic.greenhouseplc.FallingLeavesView
+        android:id="@+id/fallingLeavesView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:elevation="40dp"
+        android:focusable="false"
+        android:importantForAccessibility="no" />
+
+</FrameLayout>

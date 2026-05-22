@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">GreenHousePLCbyXzynetic</string>
+    <string name="ssid">SSID</string>
+    <string name="passsword">Password</string>
+    <string name="main_title">Mini Greenhouse PLC</string>
+    <string name="brand_name">by Xzynetic</string>
+    <string name="main_description">Smart greenhouse monitoring and actuator control system for temperature, humidity, soil moisture, water tank level, and lighting.</string>
+    <string name="connect_hint">Connect to your greenhouse controller</string>
+    <string name="target_wifi">Target WiFi: GreenHouseByXzynetic</string>
+    <string name="connect">Connect</string>
+    <string name="connecting">Connecting...</string>
+
+    <string name="title_mini">Mini</string>
+    <string name="title_greenhouse">Greenhouse</string>
+    <string name="title_plc"> PLC</string>
+    <string name="main_subtitle">Smart greenhouse monitoring\nand actuator control system</string>
+
+    <string name="feature_monitor">Monitor</string>
+    <string name="feature_monitor_desc">Temperature &amp;\nHumidity</string>
+
+    <string name="feature_track">Track</string>
+    <string name="feature_track_desc">Soil Moisture &amp;\nWater Level</string>
+
+    <string name="feature_control">Control</string>
+    <string name="feature_control_desc">Lighting, Pump,\nVentilation</string>
+    <string name="powered_by">Powered by  Xzynetic</string>
+
+    <string name="cd_greenhouse_header">Greenhouse background image</string>
+    <string name="cd_greenhouse_icon">Greenhouse icon</string>
+    <string name="cd_leaf">Leaf decoration</string>
+    <string name="cd_leaf_badge">Leaf badge</string>
+    <string name="cd_temperature">Temperature and humidity monitoring icon</string>
+    <string name="cd_water_drop">Soil moisture and water level tracking icon</string>
+    <string name="cd_light">Lighting control icon</string>
+    <string name="cd_signal">Wireless signal icon</string>
+    <string name="cd_wifi">WiFi icon</string>
+    <string name="cd_arrow">Arrow icon</string>
+
+    <string name="ghouse_device_name">GreenHouseByXzynetic</string>
+    <string name="ghouse_header_subtitle">Check your garden today</string>
+    <string name="ghouse_status_dot">●</string>
+    <string name="ghouse_connecting">Connecting…</string>
+    <string name="ghouse_auto">AUTO</string>
+    <string name="ghouse_uptime_blank">Uptime: --</string>
+    <string name="ghouse_system_on">SYSTEM ON</string>
+    <string name="ghouse_nav_temp">🌡️&#10;Temp</string>
+    <string name="ghouse_nav_water">💧&#10;Water</string>
+    <string name="ghouse_nav_light">☀️&#10;Light</string>
+    <string name="ghouse_alert">Alert</string>
+    <string name="attribution_greenhouse_plc">Greenhouse PLC monitoring and control</string>
+</resources>
